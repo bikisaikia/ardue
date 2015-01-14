@@ -1,7 +1,7 @@
 #Installing Ardublockly
 
 ## Required Software
-* [Python 2.7.x](https://www.python.org/download), currently development is maintaining compatibility with  3.x
+* [Python 2.7.x](https://www.python.org/download) (current development aims to maintain compatibility with  3.x)
 * [Arduino IDE version 1.5 or higher](http://arduino.cc/en/main/software)
 * Browser of your choice (currently supports Firefox, Chrome, IE10+, Opera and Safari)
 
@@ -32,3 +32,5 @@ svn checkout https://github.com/carlosperate/ardublockly
 
 ## Run Ardublockly
 To run the application execute the `launch_arduino.py` file.
+
+Your default browser should open a local web page with Ardublockly on it.
