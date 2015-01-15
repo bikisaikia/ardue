@@ -1,5 +1,3 @@
-#Installing Ardublockly
-
 ## Required Software
 * [Python 2.7.x](https://www.python.org/download) (current development aims to maintain compatibility with  3.x)
 * [Arduino IDE version 1.5 or higher](http://arduino.cc/en/main/software)
