@@ -1,9 +1,27 @@
 # Installing Ardublockly
 
-## Required Software
+## Simple Installation
+For an easy installation of Ardublockly you can [download the packaged version](https://github.com/carlosperate/ardublockly-package).
+
+### Required Software
+* [Packaged Ardublockly](https://github.com/carlosperate/ardublockly-package)
+* [Arduino IDE version 1.6 or higher](http://arduino.cc/en/main/software)
+* Modern browser of your choice (currently supports Firefox, Chrome, IE10+, Opera and Safari)
+
+For now, the stand-alone executable it is only available for Windows, instructions can be found in the [Ardublockly-package repository](https://github.com/carlosperate/ardublockly-package).
+
+### Run Ardublockly
+To run the application execute the `ardublock_win.bat` file from the package root folder.
+
+Your default browser should open a local web page with Ardublockly on it.
+
+## Developer Installation
+
+### Required Software
 * [Python 2.7.x](https://www.python.org/download) (current development aims to maintain compatibility with  3.x)
-* [Arduino IDE version 1.5 or higher](http://arduino.cc/en/main/software)
-* Browser of your choice (currently supports Firefox, Chrome, IE10+, Opera and Safari)
+* [Closure library](https://developers.google.com/closure/library/) 
+* [Arduino IDE version 1.6 or higher](http://arduino.cc/en/main/software)
+* Modern browser of your choice (currently supports Firefox, Chrome, IE10+, Opera and Safari)
 
 #### Closure dependency
 As Ardublockly is still under development, it is currently running the uncompressed version of Blockly. This requires the [Closure library](https://developers.google.com/closure/library/) to run.
@@ -20,7 +38,7 @@ The folder containing the library must be named `closure-library` and be located
 
 More info on the Closure requirement can be found in the [Blockly documentation](https://developers.google.com/blockly/hacking/closure).
 
-## Downloading Ardublockly
+### Downloading Ardublockly
 To download a copy of the repository, either [download this zip file](https://github.com/carlosperate/ardublockly/zipball/master) with the latest version from github, or clone locally using git:
 ```
 git clone https://github.com/carlosperate/ardublockly.git
@@ -30,7 +48,7 @@ Or Subversion:
 svn checkout https://github.com/carlosperate/ardublockly
 ```
 
-## Run Ardublockly
+### Run Ardublockly
 To run the application execute the `launch_arduino.py` file.
 
 Your default browser should open a local web page with Ardublockly on it.
