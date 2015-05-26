@@ -1,8 +1,8 @@
 # Download Ardublockly-package
-For an easy installation of Ardublockly there is a prepackaged version of Ardublockly (called [Ardublockly-package](https://github.com/carlosperate/ardublockly-package)) with a self-contained executable that does not have any other dependencies. You can download this version in the following links:
-* [Windows](https://github.com/carlosperate/ardublockly-package)
-* [Linux](https://github.com/carlosperate/ardublockly-package) (not yet ready)
-* [Mac OS X](https://github.com/carlosperate/ardublockly-package) (not yet ready)
+For an easy installation of Ardublockly there is a packaged version of Ardublockly with a self-contained executable that does not have any other dependencies. You can download this version in the [releases](https://github.com/carlosperate/ardublockly/releases) section of this repository.
+
+Currently only the Windows version of the package is available, Linux and MacOS user can still use the unpackaged version.
+
 
 ### Run Ardublockly-package
 To run the application execute the `ardublockly_win.bat` file from the unzipped root folder.
@@ -35,6 +35,7 @@ As Ardublockly is still under development, it is currently running the uncompres
 To download a copy of the repository, either [download this zip file](https://github.com/google/closure-library/archive/master.zip) with the latest version from github, or clone locally using git:
 ```
 git clone https://github.com/google/closure-library.git
+
 ```
 Or Subversion:
 ```
@@ -45,14 +46,17 @@ The folder containing the library must be named `closure-library` and be located
 More info on the Closure requirement can be found in the [Blockly documentation](https://developers.google.com/blockly/hacking/closure).
 
 ## Downloading Ardublockly
-To download a copy of the repository, either [download this zip file](https://github.com/carlosperate/ardublockly/zipball/master) with the latest version from github, or clone locally using git:
+To download a working copy of the repository you'll have clone locally using git:
 ```
 git clone https://github.com/carlosperate/ardublockly.git
+cd ardublockly
+git submodule update --init --recursive
 ```
-Or Subversion:
-```
-svn checkout https://github.com/carlosperate/ardublockly
-```
+
+When the repository is downloaded [directly from github as zip file](https://github.com/carlosperate/ardublockly/zipball/master), the internal git submodule is not pull with it, which is why git is the best method to download a working copy.
+
+If for some reason you unable to use git, you can download [Ardublockly from github as zip file](https://github.com/carlosperate/ardublockly/zipball/master), download [Closure library as a zip file](https://github.com/google/closure-library/archive/master.zip) and then uncompress the contents from the Ardublockly zip file and then unzip the Closure library into the `closure-library` folder within Ardublockly (make sure there is not an additional "closure-library" nested folder inside this one).
+
 
 ## Run Ardublockly
 To run the application execute the `start.py` python file.
