@@ -14,7 +14,6 @@ Your default browser should open a local web page with Ardublockly on it.
 * [Python 2.7.x](https://www.python.org/download) (current development aims to maintain compatibility with  3.x)
 * [Arduino IDE version 1.6 or higher](http://arduino.cc/en/main/software)
 * [Ardublockly source code](https://github.com/carlosperate/ardublockly/archive/master.zip)
-* [Closure library source code](https://github.com/google/closure-library/archive/master.zip)
 * Modern browser of your choice (currently supports Firefox, Chrome, IE10+, Opera and Safari)
 
 #### Linux only requirement
@@ -29,8 +28,8 @@ OR, install Tkinter for Python 3 on Ubuntu:
 sudo apt-get install python3-tk
 ```
 
-## Closure dependency
-As Ardublockly is still under development, it is currently running the uncompressed version of Blockly. This requires the [Closure library](https://developers.google.com/closure/library/) to run.
+## Git Submodule
+As Ardublockly is still under development, it is currently running the uncompressed version of Blockly. This requires the [Closure library](https://developers.google.com/closure/library/) to run, which has been included in this repository as a git submodule.
 
 To download a copy of the repository, either [download this zip file](https://github.com/google/closure-library/archive/master.zip) with the latest version from github, or clone locally using git:
 ```
