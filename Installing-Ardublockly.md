@@ -83,7 +83,7 @@ Your default browser should open a local web page to load the Ardublockly applic
 The Arduino IDE is required to load the programs into an Arduino board, more information can be found in the [Configure Ardublockly page](https://github.com/carlosperate/ardublockly/wiki/Configure-Ardublockly).
 
 #### Run windowed Ardublockly
-To run the windowed version of the development Ardublockly you will need to install 2 python packages,  [wxPython](../Building-Ardublockly#wxpython) and [CEF Python](../Building-Ardublockly#cefpython3).
+To run the windowed version of the development Ardublockly you will need to install 2 python packages,  [wxPython](Building-Ardublockly#wxpython) and [CEF Python](Building-Ardublockly#cefpython3).
 
 Then execute the `start_cef.py` python script file located on the the root of the Ardublockly folder (this also works on the "packaged" Ardublockly version):
 
