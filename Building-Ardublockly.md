@@ -1,18 +1,7 @@
-# Ardublockly package
+# Building Ardublockly
 The package folder contains the Python scripts required to package Ardublockly into a standalone executable. This way it can be distributed without any dependencies other than having the Arduino IDE.
 
 Currently the Windows build is created using py2exe and the Linux and Mac OS X builds are created using PyInstaller (in the future PyInstaller might be updated to also create the Windows builds, for now the original py2exe script is pretty stable). 
-
-
-## Download the packaged Ardublockly
-The stable binaries for Windows, Linux, and Mac OS X are hosted in GitHub as part of the [repository releases][1].
-
-Development builds are frequently triggered in build servers and hosted in the following link: [Dev builds][10]
-
-| Linux build         | Windows build       | Mac OS X build       |
-|:-------------------:|:-------------------:|:--------------------:|
-| [![Linux Build Status](https://travis-ci.org/carlosperate/ardublockly.svg?branch=master)](https://travis-ci.org/carlosperate/ardublockly) | [![Windows Build status](https://ci.appveyor.com/api/projects/status/t877g920hdiifc2i?svg=true)](https://ci.appveyor.com/project/carlosperate/ardublockly) | TBD |
-| [Download Link][11] | [Download Link][12] | [Download Link][13]  |
 
 
 ## Ardublockly source code dependencies
