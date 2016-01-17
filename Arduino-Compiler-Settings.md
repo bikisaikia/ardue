@@ -16,7 +16,7 @@
 
 ```
 [Arduino_IDE]
-arduino_exec_path = C:/IDEs/arduino-1.6/arduino.exe
+arduino_exec_path = C:/IDEs/arduino-1.6/arduino_debug.exe
 arduino_board = Uno
 arduino_serial_port = COM1
 
