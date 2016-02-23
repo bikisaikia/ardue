@@ -7,6 +7,7 @@
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
 - [FAQs](FAQs)
-- [About](About):
+- About:
+    - [About Ardublocly](About)
     - [License](License)
     - [Credits](Credits)
