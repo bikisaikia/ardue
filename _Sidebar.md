@@ -6,7 +6,7 @@
     - [Arduino Compiler Settings](Arduino-Compiler-Settings)
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
-- FAQs
-- About:
-    - License
-    - Credits
+- [FAQs](FAQs)
+- [About](About):
+    - [License](License)
+    - [Credits](Credits)
