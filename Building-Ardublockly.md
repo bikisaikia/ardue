@@ -153,9 +153,6 @@ python package/pack_ardublockly.py
 The pack script is designed for the build servers to zip the required contents into a single file to be uploaded to cloud storage, so it still leaves quite a few things behind. This script creates a new folder on the same level a the project root, and then zips it and saves it into the folder 'upload' within the project root.
 
 
-## Individual script files descriptions
-This part of the documentation is still under work.
-
 [1]: https://github.com/carlosperate/ardublockly/releases/
 [2]: http://www.lfd.uci.edu/~gohlke/pythonlibs/
 [3]: https://github.com/carlosperate/ardublockly/blob/master/package/requirements.txt
