@@ -1,4 +1,4 @@
-- [Home](home)
+- [Home](Home)
 - [Quick Start](Quick-Start)
 - User Guide:
     - [Installing Ardublockly](Installing-Ardublockly)
