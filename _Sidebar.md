@@ -6,6 +6,7 @@
     - [Arduino Compiler Settings](Arduino-Compiler-Settings)
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
+    - [Git Settings](Git-settings)
 - [FAQs](FAQs)
 - About:
     - [About Ardublocly](About)
