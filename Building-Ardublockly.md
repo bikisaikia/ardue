@@ -28,7 +28,7 @@ Git needs to be installed on the system and accessible through the command line 
 ### Python
 These build scripts have been developed and tested only on Python 2.7.
 
-While the non-GUI version of Ardublockly (command line server + browser-based GUI) is compatible with other Python versions (tested on Python 2.7 and 3.4), due to the individual perks of the python libraries used here and initial unavailability of some Python 3 bindings, a single build environment based on Python 2.7 has been be targeted.
+While the non-GUI version of Ardublockly (command line server + browser-based GUI) is compatible with other Python versions (tested on Python 2.7 and 3.4), due to the individual quirks of the python libraries used here and initial unavailability of some Python 3 bindings, a single build environment based on Python 2.7 has been be targeted.
 
 If you are using Python virtual environments on Windows this [collection of Python extensions binaries][2] is highly recommended.
 
