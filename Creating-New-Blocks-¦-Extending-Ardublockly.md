@@ -1,4 +1,4 @@
-_(This is a stub of the documentation for the functionality included to easily extend Ardublockly to support new types of blocks)_
+_(This is a stub of the documentation for the functionality included to easily extend Ardublockly to support new blocks)_
 
 _(Introductory paragraph should go here)_
 
@@ -17,23 +17,23 @@ Blockly.Arduino.PinTypes.add('PIN_NAME');
 ```
 Blockly.Types.addType(typeName, basicType, compatibleTypes)
 ```
-* __typeName__: An String to identifiable the name of the type.
-* __basicType__: A `Blockly.Type.BasicTypes` object to defines the basic type
+* __typeName__: An String to identify the name of the type.
+* __basicType__: A `Blockly.Type.BasicTypes` object that defined its basic type
 * __compatibleTypes__: An array of `Blockly.Type.Types` that this Type can be compatible with.
 
-_(Add a note about how compatibility does not go both ways, e.g. a block that takes a number can also take a compatible boolean, but a block that takes a boolean does not necessarily take a Number)_
+_(Add a note about how compatibility does not go both ways, e.g. a block that takes a Number can also take a compatible boolean, but a block that takes a boolean does not necessarily take a Number)_
 
-Making other blocks compatible with this one: _(Not yet implemented)_
+Extend other blocks to have a new block as compatible: _(Not yet implemented)_
 
 ```
 Blockly.Types.addAsCompatible(originType, compatibleType)
 ```
 
-* __originType__: A `Blockly.Type.Types` for which to extend its compatibility listh.
+* __originType__: A `Blockly.Type.Types` for which to extend its compatibility list.
 * __compatibleType__: The `Blockly.Type.Types` to add as compatible.
 
 ### Basic Type
-_Explain that a basic type is the most fundamental "type unit", so a new basic type should not be something that could be "derived" from an existing basic type. For example, a "long integer" is a type of `NUMBER` so a new `Type` for that should be created instead of a "basic type", and a "colour" cannot be represented by any of the current basic types, so it should create its own._
+_(Explain that a basic type is the most fundamental "type unit", so a new basic type should not be something that could be "derived" from an existing one. For example, a "long integer" is a type of `NUMBER` so a new `Type` for that should be created instead of a new "basic type", and a "colour" cannot be represented by any of the current basic types, so it should create its own.)_
 
 Current basic types:
 
