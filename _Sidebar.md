@@ -8,7 +8,7 @@
     - [Building Ardublockly](Building-Ardublockly)
     - [Git Settings](Git-settings)
     - Create Blocks:
-        - [Extending Ardublockly](Creating-New-Blocks-¦-Extending-Ardublockly)
+        - [Extending Ardublockly](Create-Blocks-¦-Extending-Ardublockly)
 - [FAQs](FAQs)
 - About:
     - [About Ardublocly](About)
