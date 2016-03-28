@@ -88,7 +88,7 @@ The build steps for the Ardublockly Server are slightly different depending on t
 To build Ardublockly under Windows all you have to do is execute the `build_windows.py` file from the project root directory:
 
 ```
-python package\build_windows.py
+python package\build_py2exe.py
 ```
 
 This will remove any previous build directory, rebuild, and create the `ardublockly_run.bat` file into the project root.
@@ -100,7 +100,7 @@ To build Ardublockly under Linux all you have to do is execute the `build_pyinst
 python package/build_pyinstaller.py
 ```
 
-The optional flag `linux` can be provided, but the operating systems should be automatically detected.
+The optional command line argument `linux` can be provided, but the operating systems should be automatically detected.
 
 This will remove any previous build directory, rebuild, and create the `ardublockly_run.sh` file into the project root.
 
@@ -111,7 +111,7 @@ To build Ardublockly under Mac OS X all you have to do is execute the `build_pyi
 python package/build_pyinstaller.py
 ```
 
-The optional flag `mac` can be provided, but the operating systems should be automatically detected.
+The optional command line argument `mac` can be provided, but the operating systems should be automatically detected.
 
 This will remove any previous build directory, and rebuild it.
 
@@ -144,13 +144,13 @@ python package\build_docs.py
 This will remove any previous build directory, rebuild it, and remove any temporary files.
 
 ## Final Step: Packing all Ardublockly (platform independent)
-This step is only meant if you wish to pack the Ardublockly application into a distributable form. You can pack ardublockly running the following command from the project root directory:
+This step is only meant if you wish to pack the Ardublockly application into a distributable form. You can pack Ardublockly running the following command from the project root directory:
 
 ```
 python package/pack_ardublockly.py
 ```
 
-The pack script is designed for the build servers to zip the required contents into a single file to be uploaded to cloud storage, so it still leaves quite a few things behind. This script creates a new folder on the same level a the project root, and then zips it and saves it into the folder 'upload' within the project root.
+The pack script is designed for the build servers to zip the required contents into a single file to be uploaded to cloud storage, so it does not pack all the repository source code. This script creates a new folder on the same level a the project root, and then zips it and saves it into the folder 'upload' within the project root.
 
 
 [1]: https://github.com/carlosperate/ardublockly/releases/
