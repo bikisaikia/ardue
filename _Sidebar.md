@@ -6,6 +6,7 @@
     - [Arduino Compiler Settings](Arduino-Compiler-Settings)
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
+    - [Runninng Uncompressed Ardublockly](Runninng-Uncompressed-Ardublockly)
     - [Git Settings](Git-settings)
     - Create Blocks:
         - [Extending Ardublockly](Create-Blocks-~-Extending-Ardublockly)
