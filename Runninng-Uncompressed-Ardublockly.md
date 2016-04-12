@@ -1,6 +1,6 @@
-# Using uncompressed blockly
+# Runninng Uncompressed Ardublockly Blockly
 
-During development you could implement your changes to the source files and build (using the [Building Ardublockly](Building-Ardublockly) instructions) each time, however the code is minified and would be quite hard to debug. For that reason it is highly encouraged to use the uncompressed version of Ardublockly. 
+During development you could implement your changes to the source files and re-build each time (using the [Building Ardublockly](Building-Ardublockly) instructions), however the code is minified and would be quite hard to debug. For that reason it is highly encouraged to use the uncompressed version of Blockly used in Ardublockly. 
 
 To do so, the `/ardublockly/index.html` file already contains the required sources commented out. Simply modified the following from:
 
