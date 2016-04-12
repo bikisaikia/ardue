@@ -7,7 +7,7 @@
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
     - [Runninng Uncompressed Ardublockly](Runninng-Uncompressed-Ardublockly)
-    - [Git Settings](Git-settings)
+    - [Git Settings](Git-Settings)
     - Create Blocks:
         - [Extending Ardublockly](Create-Blocks-~-Extending-Ardublockly)
 - [FAQs](FAQs)
