@@ -44,6 +44,7 @@ To do so, the `/ardublockly/index.html` file already contains the required sourc
   <script src="../blockly/generators/arduino/stepper.js"></script>
   <script src="../blockly/generators/arduino/text.js"></script>
   <script src="../blockly/generators/arduino/time.js"></script>
+  <script src="../blockly/generators/arduino/tone.js"></script>
   <script src="../blockly/generators/arduino/variables.js"></script-->
 ```
 
@@ -89,6 +90,7 @@ To:
   <script src="../blockly/generators/arduino/stepper.js"></script>
   <script src="../blockly/generators/arduino/text.js"></script>
   <script src="../blockly/generators/arduino/time.js"></script>
+  <script src="../blockly/generators/arduino/tone.js"></script>
   <script src="../blockly/generators/arduino/variables.js"></script>
 ```
 
