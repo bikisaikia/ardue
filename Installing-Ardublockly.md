@@ -14,7 +14,8 @@ The easiest way to use Ardublockly is to download the packaged version, which is
 
 You can download the latest stable version in the [releases](https://github.com/carlosperate/ardublockly/releases) section of this repository.
 
-Additionally, development builds with the latest features (still under development) can be found in the links below. The Windows version works in both 32 and 64 bit of windows 7 and higher. The Linux version works only on x64, built on Ubuntu 12.04. The Mac OS X version works on 10.8 Mountain Lion or higher.
+#### Development builds of packaged Ardublockly
+Additionally, development builds with the latest features still under development can be found in the links below. The Windows version works in both 32 and 64 bit of windows 7 and higher. The Linux version works only on x64, built on Ubuntu 12.04. The Mac OS X version works on 10.8 Mountain Lion or higher.
 
 http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/index.html
 
@@ -33,7 +34,7 @@ To run the application the steps are slightly different depending on the platfor
 * __Linux__: Execute the `ardublockly_run.sh` shell script located on the Ardublockly folder.
 * __OS X__: Right click the `Ardublockly.app` file and click `open`.
 
-![Ardublockly desktop application](https://carlosperate.github.io/ardublockly/images/screenshot_desktop_1.png)
+![Ardublockly desktop application](http://carlosperate.github.io/ardublockly/images/screenshot_desktop_1.png)
 
 The Arduino IDE is required to compile and load the programs into an Arduino board, more information can be found in the [Configure Ardublockly page](https://github.com/carlosperate/ardublockly/wiki/Configure-Ardublockly).
 
@@ -89,7 +90,7 @@ python start.py
 
 Your default browser should open a local web page to load the Ardublockly application.
 
-![Ardublockly development](https://carlosperate.github.io/ardublockly/images/screenshot_browser_1.png)
+![Ardublockly development](http://carlosperate.github.io/ardublockly/images/screenshot_browser_1.png)
 
 The Arduino IDE is required to compile and load the programs into an Arduino board, more information can be found in the [Configure Ardublockly page](https://github.com/carlosperate/ardublockly/wiki/Configure-Ardublockly).
 
