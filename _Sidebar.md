@@ -10,6 +10,7 @@
     - [Git Settings](Git-Settings)
     - Create Blocks:
         - [Extending Ardublockly](Create-Blocks-~-Extending-Ardublockly)
+    - [Add a New Language](Add-New-Language)
 - [FAQs](FAQs)
 - About:
     - [About Ardublocly](About)
