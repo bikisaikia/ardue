@@ -1,3 +1,3 @@
-# Welcome to the ardublockly wiki!
+# Welcome to the Ardublockly Documentation!
 
-The documentation is currently under work. Links to the available pages can be found on the right side navigation box.
+The documentation is currently under work. Links to the available pages can be found on the side navigation menu.
