@@ -34,7 +34,7 @@ To run the application the steps are slightly different depending on the platfor
 * __Linux__: Execute the `ardublockly_run.sh` shell script located on the Ardublockly folder.
 * __OS X__: Right click the `Ardublockly.app` file and click `open`.
 
-![Ardublockly desktop application](http://carlosperate.github.io/ardublockly/images/screenshot_desktop_1.png)
+![Ardublockly desktop application](img/screenshots_cross_platform_1.png)
 
 The Arduino IDE is required to compile and load the programs into an Arduino board, more information can be found in the [Configure Ardublockly page](https://github.com/carlosperate/ardublockly/wiki/Configure-Ardublockly).
 
@@ -90,7 +90,7 @@ python start.py
 
 Your default browser should open a local web page to load the Ardublockly application.
 
-![Ardublockly development](http://carlosperate.github.io/ardublockly/images/screenshot_browser_1.png)
+![Ardublockly development](img/screenshot_browser_1.png)
 
 The Arduino IDE is required to compile and load the programs into an Arduino board, more information can be found in the [Configure Ardublockly page](https://github.com/carlosperate/ardublockly/wiki/Configure-Ardublockly).
 
