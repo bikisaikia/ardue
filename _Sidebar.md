@@ -4,6 +4,17 @@
     - [Installing Ardublockly](Installing-Ardublockly)
     - [Configure Ardublockly](Configure-Ardublockly)
     - [Arduino Compiler Settings](Arduino-Compiler-Settings)
+    - General Blocks:
+         - [Logic](Create-~-Logic) (including [If/Else](Create-~-IfElse))
+         - [Loops](Create-~-Loops)
+         - Math
+         - [Text](Create-~-Text)
+         - [Variables](Create-~-Variables)
+         - Functions
+    - Arduino Specific Blocks:
+        - TBD
+    - Additional Blocks:
+        - TBD
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
     - [Runninng Uncompressed Ardublockly](Runninng-Uncompressed-Ardublockly)
