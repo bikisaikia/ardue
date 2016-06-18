@@ -5,26 +5,27 @@
     - [Configure Ardublockly](Configure-Ardublockly)
     - [Arduino Compiler Settings](Arduino-Compiler-Settings)
     - General Blocks:
-         - [Logic](Create-~-Logic) (including [If/Else](Create-~-IfElse))
-         - [Loops](Create-~-Loops)
-         - Math
-         - [Text](Create-~-Text)
-         - [Variables](Create-~-Variables)
-         - Functions
+        - [Logic](Create-~-Logic) (including [If/Else](Create-~-IfElse))
+        - [Loops](Create-~-Loops)
+        - Math
+        - [Text](Create-~-Text)
+        - [Variables](Create-~-Variables)
+        - Functions
     - Arduino Specific Blocks:
         - TBD
     - Additional Blocks:
         - TBD
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
-    - [Runninng Uncompressed Ardublockly](Runninng-Uncompressed-Ardublockly)
+    - [Running Uncompressed Ardublockly](Running-Uncompressed-Ardublockly)
     - [Git Settings](Git-Settings)
     - Create Blocks:
         - [Overview](Create-Blocks)
         - [Extending Ardublockly](Create-Blocks-~-Extending-Ardublockly)
+    - [Add a New Board](Add-New-Arduino-Board)
     - [Add a New Language](Add-New-Language)
 - [FAQs](FAQs)
 - About:
-    - [About Ardublocly](About)
+    - [About Ardublockly](About)
     - [License](License)
     - [Credits](Credits)
