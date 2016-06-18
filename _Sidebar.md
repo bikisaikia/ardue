@@ -5,7 +5,8 @@
     - [Configure Ardublockly](Configure-Ardublockly)
     - [Arduino Compiler Settings](Arduino-Compiler-Settings)
     - General Blocks:
-        - [Logic](Create-~-Logic) (including [If/Else](Create-~-IfElse))
+        - [Logic](Create-~-Logic)
+        - [Logic If/Else](Create-~-IfElse)
         - [Loops](Create-~-Loops)
         - Math
         - [Text](Create-~-Text)
