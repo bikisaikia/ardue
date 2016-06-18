@@ -2,7 +2,7 @@ _(Work in Progress: This page should describe how to add a new Arduino Board to 
 
 # Adding a New Arduino Board to Ardublockly
 
-As long as the board you would like to add is supported by the Arduino IDE, adding support within Ardublockly is a simple task and only two files need to be modified:
+As long as the board you would like to add is supported by the Arduino IDE, adding support within Ardublockly is a simple task that only required two files to be modified:
 
 * `ardublocklyserver/compilersettings.py`: Needs a new entry onto the `ServerCompilerSettings.__arduino_types` dictionary. 
 * `blockly/generators/arduino/boards.js`: Needs a new entry in the `Blockly.Arduino.Boards.profiles` object.
@@ -14,9 +14,9 @@ You can have a look at [commit 7cc6bc3fe310449b94e1160cc145876d82586e02](https:/
 
 ## Server update
 
-Although this might change in the future (and the documentation updated with the change), currently the server contains a dictionary with the supported boards. Each "key-value" pair in this dictionary defines the name of the board and compiler flag respectively.
+Although this might change in the future (and the documentation updated with the change), the server contains a dictionary with the supported boards. Each "key-value" pair in this dictionary defines the name of the board and compiler flag respectively.
 
-The reason this dictionary exists is because the board data is retrieved from the server each time the settings are opened on Ardublockly, each time the drop down is automatically generated and each new selection sends the id back to the server to be saved on the settings ini file. Then, when the front end sends the code to be server to create the Arduino Sketch and compile it, it check this setting and appends the relevant compiler flag to the IDE command line invocation.
+The reason this dictionary exists is because the board data is retrieved from the server each time the settings are opened, dynamically generating the settings drop down, and sending each new selection to the server to be saved on the settings ini file. Then, when the front end sends the code to be compiled, it check this saved setting and appends the relevant compiler flag to the IDE command line invocation.
 
 An example with a couple of items can be seen below, to add a new board, the same format entry has to be added to this dictionary.
 
