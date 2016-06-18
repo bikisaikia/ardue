@@ -8,14 +8,10 @@
         - [Logic](Create-~-Logic)
         - [Logic If/Else](Create-~-IfElse)
         - [Loops](Create-~-Loops)
-        - Math
+        - [Math](Create-~-Math)
         - [Text](Create-~-Text)
         - [Variables](Create-~-Variables)
-        - Functions
-    - Arduino Specific Blocks:
-        - TBD
-    - Additional Blocks:
-        - TBD
+        - [Functions](Create-~-Functions)
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
     - [Running Uncompressed Ardublockly](Running-Uncompressed-Ardublockly)
