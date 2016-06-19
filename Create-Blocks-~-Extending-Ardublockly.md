@@ -8,13 +8,13 @@ _(Top view description of the extensibility options should go here)_
 
 _(this has not yet been implemented)_
 
-```
+```javascript
 Blockly.Arduino.PinTypes.add('PIN_NAME');
 ```
 
 ## Adding a new Data Types
 
-```
+```javascript
 Blockly.Types.addType(typeName, basicType, compatibleTypes)
 ```
 * __typeName__: An String to identify the name of the type.
@@ -25,7 +25,7 @@ _(Add a note about how compatibility does not go both ways, e.g. a block that ta
 
 Extend other blocks to have a new block as compatible: _(Not yet implemented)_
 
-```
+```javascript
 Blockly.Types.addAsCompatible(originType, compatibleType)
 ```
 
@@ -37,7 +37,7 @@ _(Explain that a basic type is the most fundamental "type unit", so a new basic 
 
 Current basic types:
 
-```
+```javascript
 Blockly.Type.BasicTypes.TEXT      // General text string type
 Blockly.Type.BasicTypes.BOOLEAN   // Can only have two values, generally 0 for false, or 1 for true
 Blockly.Type.BasicTypes.NUMBER    // A general number type
@@ -50,7 +50,7 @@ Blockly.Type.BasicTypes.UNDEF     // Can be used to delegate type assignment
 
 Add a new Basic Type: _(Not yet implemented)_
 
-```
+```javascript
 Blockly.Types.addBasicType('TYPE_NAME')
 ```
 
