@@ -18,6 +18,8 @@ Although this might change in the future (and the documentation updated with the
 
 The reason this dictionary exists is because the board data is retrieved from the server each time the settings are opened, dynamically generating the settings drop down, and sending each new selection to the server to be saved on the settings ini file. Then, when the front end sends the code to be compiled, it check this saved setting and appends the relevant compiler flag to the IDE command line invocation.
 
+It is important to ensure that the new key entry in this dictionary contains the same name as the new board profile added to `blockly/generators/arduino/boards.js`.
+
 An example with a couple of items can be seen below, to add a new board, the same format entry has to be added to this dictionary.
 
 ```python
@@ -30,7 +32,7 @@ __arduino_types = {'Uno': 'arduino:avr:uno',
 
 The Arduino code generator contains a list of Arduino Board profiles defining board characteristics like the pin, peripheral configuration, compiler flag, etc.
 
-The following is the board profile for the Arduino Uno, a similar profile will have to be created for the new board to support:
+The following is the board profile for the Arduino Uno, a similar profile will have to be created for the new board to support. It is important to note that the object name for the new board profile is the same as the key entered in the server dictionary (spaces should be replaced by underscores `_`).
 
 ```javascript
 /** Arduino Uno board profile. */
