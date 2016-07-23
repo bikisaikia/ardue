@@ -8,15 +8,14 @@ Currently the Python server is packaged using py2exe for Windows, and PyInstalle
 The desktop wrapper is based on Electron, which uses node.js. The node.js component is only used where required for the application to integrate well with the individual desktop platforms. Originally the Chromium Embedded Framework Python bindings were used, but cross-platform maintenance proved to be problematic and Electron has provided a much smother alternative.
 
 
-## Download the packaged Ardublockly
-The stable binaries for Windows, Linux, and Mac OS X are hosted in GitHub as part of the [repository releases][1].
+## Build servers
+Each commit to the [Ardublockly GitHub repository][1] triggers the build servers to follow all these build steps and upload the build output to an [online server][11] to make them available for download.
 
-Development builds are triggered in the CI build servers on each git commit and are hosted in the following links:
+There is a server for each platform (Windows, macOS, and Linux) with their own build script. So it could be useful to have a look at these scripts if some of the instructions here are not completely clear:
 
-| Linux build         | Windows build       | Mac OS X build       |
-|:-------------------:|:-------------------:|:--------------------:|
-| [![Linux Build Status](https://circleci.com/gh/carlosperate/ardublockly/tree/master.svg?style=svg)](https://circleci.com/gh/carlosperate/ardublockly/tree/master) | [![Windows Build status](https://ci.appveyor.com/api/projects/status/t877g920hdiifc2i?svg=true)](https://ci.appveyor.com/project/carlosperate/ardublockly) | [![Mac Build Status](https://travis-ci.org/carlosperate/ardublockly.svg?branch=master)](https://travis-ci.org/carlosperate/ardublockly) |
-| [Download Link][11] | [Download Link][12] | [Download Link][13]  |
+* Windows AppVeyor script: https://github.com/carlosperate/ardublockly/blob/master/.appveyor.yml
+* macOS Travis script: https://github.com/carlosperate/ardublockly/blob/master/.travis.yml
+* Linux CircleCI script: https://github.com/carlosperate/ardublockly/blob/master/circle.yml
 
 
 ## Ardublockly executable build dependencies
@@ -24,11 +23,10 @@ Development builds are triggered in the CI build servers on each git commit and 
 ### Git
 Git needs to be installed on the system and accessible through the command line interface.
 
-
 ### Python
-These build scripts have been developed and tested only on Python 2.7.
+The build scripts included in the `package` folder were originally developed and tested on Python 2.7, and later the build system was moved to use Python 3.4. Therefore, while these scripts should still be compatible with Python 2, on their current form they have only been tested on Python 3.
 
-While the non-GUI version of Ardublockly (command line server + browser-based GUI) is compatible with other Python versions (tested on Python 2.7 and 3.4), due to the individual quirks of the python libraries used here and initial unavailability of some Python 3 bindings, a single build environment based on Python 2.7 has been be targeted.
+While the "core version" of Ardublockly (command line server + browser-based GUI) should be fully compatible with both Python 2 and 3 (tested on Python 2.7 and 3.4), there is one particular step in this build process that requires Python 2.7.
 
 If you are using Python virtual environments on Windows this [collection of Python extensions binaries][2] is highly recommended.
 
@@ -69,7 +67,7 @@ Node.js is required to run [Electron][9]. It can be downloaded from the [officia
 The `npm` package manager should be included with node, which is used to deal with all the Electron application dependencies.
 
 
-## Build Instructions
+## Download the Source Code
 Download and initialise this project repository:
 
 ```
@@ -78,13 +76,31 @@ cd ardublockly
 git submodule update --init --recursive
 ```
 
-If you have already downloaded the Ardublockly source code, make sure the submodules are initialised, in this case the 'closure-library' in the project root directory, and 'ardublockly.wiki' in the 'package/ardublocklydocs/' folder. You can run the last git command above in the project root directory to ensure this is the case, otherwise the submodules directories will be empty.
+If you have already downloaded the Ardublockly source code, make sure the submodules are initialised, in this case the 'closure-library' in the project root directory, and 'ardublockly.wiki' in the 'package/ardublocklydocs/' folder. You can run the last git command above in the project root directory to ensure this is the case, otherwise the submodule directories will be empty.
 
-### First step: Python server (platform dependent)
 
+## Build Instructions
+
+### First step: Blockly
+When Blockly is compiled, all the source code contained in the `blockly` folder is compressed in the `blockly/blockly_compressed.js`, `blockly/blocks_compressed.js`, and  `blockly/arduino_compressed.js` files (among others). The repository version of these compressed files might not be the most up-to-date, so the first step should be to compile Blockly to ensure the compressed files are up-to-date.  
+
+You will need Python 2.7 for this step, as the Blockly build script is not currently compatible with Python 3. You will also need to be online, as the Google's "Closure Compiler Service" is used. From the project root directory:
+
+```
+cd blockly
+python build.py
+```
+
+At this point, if continuing with the next steps, it is recommended to go back to the project root directory:
+
+```
+cd ../
+```
+
+### Second step: Python server (platform dependent)
 The build steps for the Ardublockly Server are slightly different depending on the platform.
 
-### Windows Build
+#### Windows Build
 To build Ardublockly under Windows all you have to do is execute the `build_windows.py` file from the project root directory:
 
 ```
@@ -93,7 +109,7 @@ python package\build_py2exe.py
 
 This will remove any previous build directory, rebuild, and create the `ardublockly_run.bat` file into the project root.
 
-### Linux Build
+#### Linux Build
 To build Ardublockly under Linux all you have to do is execute the `build_pyinstaller.py` file from the project root directory:
 
 ```
@@ -104,7 +120,7 @@ The optional command line argument `linux` can be provided, but the operating sy
 
 This will remove any previous build directory, rebuild, and create the `ardublockly_run.sh` file into the project root.
 
-### Mac OS X Build
+#### Mac OS X Build
 To build Ardublockly under Mac OS X all you have to do is execute the `build_pyinstaller.py` file from the project root directory:
 
 ```
@@ -116,7 +132,7 @@ The optional command line argument `mac` can be provided, but the operating syst
 This will remove any previous build directory, and rebuild it.
 
 
-## Second step: Electron (platform independent)
+### Third step: Electron (platform independent)
 Execute the following commands from the project root directory:
 
 ```
@@ -127,13 +143,13 @@ npm run release
 
 The npm scripts will automatically detect and deal with the operating system different build requirements.
 
-At this point, if continuing with the next steps, is recommended to go back to the project root directory:
+At this point, if continuing with the next steps, it is recommended to go back to the project root directory:
 
 ```
 cd ../../
 ```
 
-## Third step: Documentation (platform independent)
+### Fourth step: Documentation (platform independent)
 
 Build the offline documentation by running the `build_docs.py` script from the project root directory:
 
@@ -143,17 +159,17 @@ python package\build_docs.py
 
 This will remove any previous build directory, rebuild it, and remove any temporary files.
 
-## Final Step: Packing all Ardublockly (platform independent)
+### Final Step: Packing all Ardublockly (platform independent)
 This step is only meant if you wish to pack the Ardublockly application into a distributable form. You can pack Ardublockly running the following command from the project root directory:
 
 ```
 python package/pack_ardublockly.py
 ```
 
-The pack script is designed for the build servers to zip the required contents into a single file to be uploaded to cloud storage, so it does not pack all the repository source code. This script creates a new folder on the same level a the project root, and then zips it and saves it into the folder 'upload' within the project root.
+The pack script is designed for the build servers to zip the required contents into a single file to be uploaded to cloud storage, so it does not pack all the repository source code. This script creates a new folder on the same level a the project root, removes unnecessary files from this copied directory, and then zips it and saves it into the folder 'upload' within the original project root.
 
 
-[1]: https://github.com/carlosperate/ardublockly/releases/
+[1]: https://github.com/carlosperate/ardublockly
 [2]: http://www.lfd.uci.edu/~gohlke/pythonlibs/
 [3]: https://github.com/carlosperate/ardublockly/blob/master/package/requirements.txt
 [4]: http://www.py2exe.org/
@@ -163,6 +179,4 @@ The pack script is designed for the build servers to zip the required contents i
 [8]: http://www.embeddedlog.com/static-docs-from-github-wiki.html
 [9]: http://electron.atom.io/
 [10]: https://nodejs.org
-[11]: http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/index.html?prefix=linux/
-[12]: http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/index.html?prefix=windows/
-[13]: http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/index.html?prefix=mac/
+[11]: http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/
