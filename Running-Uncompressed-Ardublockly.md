@@ -1,8 +1,10 @@
-# Runninng Uncompressed Ardublockly Blockly
+# Runninng Uncompressed Ardublockly
 
-During development you could implement your changes to the source files and re-build each time (using the [Building Ardublockly](Building-Ardublockly) instructions), however the code is minified and would be quite hard to debug. For that reason it is highly encouraged to use the uncompressed version of Blockly used in Ardublockly. 
+During development you could implement your changes to the source files and re-build each time (using the [Building Ardublockly](Building-Ardublockly) instructions), however the code is minified and would be quite hard to debug. For that reason it is highly encouraged to use the uncompressed version of Blockly used in Ardublockly.
 
-To do so, the `/ardublockly/index.html` file already contains the required sources commented out. Simply modified the following from:
+Remember that the `closure-library` folder needs to be populated (as a git submodule it is empty on a normal `git clone`), so make sure you have followed the [Building Ardublockly](Building-Ardublockly) instructions to Download the source code.
+
+To run Blockly uncompressed, the `/ardublockly/index.html` file already contains the required sources commented out. Simply modified the following from:
 
 ```html
   <!-- Ardublockly - These three files contain the compress version -->
@@ -93,6 +95,8 @@ To:
   <script src="../blockly/generators/arduino/tone.js"></script>
   <script src="../blockly/generators/arduino/variables.js"></script>
 ```
+
+It is highly recommended to manually comment/uncomment these blocks in the `index.html` file instead of copy/pasting from this document, as the code snippet displayed here could get out of sync with the source code.
 
 Keep in mind that any additional block file would have to to be added as a new `<script>` import.
 
