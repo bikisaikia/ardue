@@ -15,6 +15,7 @@ Every time Blockly is built, the strings defined here are included in the `block
 ## Translating the Ardublockly strings
 
 _(Description on how to do this should go here)_
+https://github.com/carlosperate/ardublockly/tree/master/ardublockly/msg
 
 
 ## Generating/Updating the language files
