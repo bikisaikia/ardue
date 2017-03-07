@@ -1,24 +1,44 @@
 # Adding a New Language to Ardublockly
+
 _(Work in Progress: This page should describe how to add new languages to Ardublockly)_
 
 While Blockly has been translated to a large number of languages using TranslateWiki (more info [here](https://developers.google.com/blockly/hacking/translating)), only a small subset of these translations has been expanded to cover the additional blocks and user interface text for Ardublockly. Ardublockly itself does not use TranslateWiki and to add a new language the JavaScript and JSON files have to be manually edited.
 
-There are 3 main files related to the localisation, but only one needs to be updated to add a new language:
 
-* `blockly/msg/messages.js`: This file defines all the strings (in English) used by Ardublockly. If you are only adding a new language, then it can be ignored as everything required will already be present.
-Every time Blockly is built, the strings defined here are included in the `blockly/msg/<language>.js` JavaScript file, translated by the entries from the respective JSON file if they have been defined.
+## Files to be edited/created
 
-* `blockly/msg/json/<language>.json`: An existing file for your language should already exists in this directory. This JSON file contains the string name and its translation, but for unsupported languages it will not include the entries required by Ardublockly (only those for Blockly). This is the file that will need to be updated (more details below).
+In total there are 3 files that have to be manually edited to add a new language to Ardublockly, one is for the Blockly blocks, one for the GUI text, and one small change required to add the new language to the settings menu.
 
-* `blockly/msg/<language>.js`: An existing file for your language should already exists in this directory. This file will be automatically generated and updated from the `blockly/msg/messages.js` and `blockly/msg/json/<language>.json` data when building Blockly, so this file should not be edited either.
+Within the Blockly source code there are 3 files relevant to any translation, all within the `blockly/msg/` directory, but only one has to be updated to add a new language:
 
-## Translating the Ardublockly strings
+* `blockly/msg/messages.js`: This file defines all the strings (in English) used by the Ardublockly blocks. If you are only adding a new language, then this file can be ignored as everything required will already be present.
 
-_(Description on how to do this should go here)_
-https://github.com/carlosperate/ardublockly/tree/master/ardublockly/msg
+  Every time Blockly is built, the strings defined here are included in the `blockly/msg/<language>.js` JavaScript files, translated by the entries from their respective JSON files if they have been defined.
+
+  For a new language translation **THIS FILE SHOULD NOT BE EDITED**.
+
+* `blockly/msg/json/<language>.json`: An existing file for your language should already exists in this directory. This JSON file contains the string name and its translation, but for unsupported languages it will not include the entries specific to Ardublockly (only those for the original Blockly). This is the file that will need to be updated (more details below).
+
+* `blockly/msg/<language>.js`: An existing file for your language should already exists in this directory. This file will be automatically generated and updated from both the `blockly/msg/messages.js` and `blockly/msg/json/<language>.json` data when building Blockly, so **THIS FILE SHOULD NOT BE MANUALLY EDITED** either.
+
+For the Ardublockly GUI two files have to be edited:
+
+* `ardublockly/msg/<language>.js`: A new file will have to created, the best approach is to copy the English version (`ardublockly/msg/en.js`) and translate it. For the new filename follow the same abbreviation convention from Blockly (so for Spanish it would be `es.js`, French `fr.js`, etc)
+
+* `ardublockly/ardublockly/ardublockly_lang.js`: At the top of the file there is a JavaScript object that will need a new entry as shown below:
+
+  ```javascript
+  Ardublockly.LANGUAGE_NAME = {
+    'fr': 'Français',
+    'en': 'English',
+    'es': 'Español'
+  };
+  ```
+
 
 
 ## Generating/Updating the language files
+
 Once the translated entries have been added to the JSON file, Blockly needs to be built to convert them into strings in the respective JavaScript file. To do this, from the Ardublockly project folder on a terminal (make sure you are using Python 2):
 
 ```
@@ -26,7 +46,7 @@ cd blockly
 python build.py
 ```
 
-_(Mention that Blockly doesn't neccesarily have to be built and that just sending a PR with those two files should be fine)_
+_(Mention that Blockly doesn't necessarily have to be built and that just sending a PR with those two files should be fine)_
 
 _(Mention that the front end js file can be updated to include the new language on the settings menu.)_
 
