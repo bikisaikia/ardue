@@ -37,7 +37,7 @@ py2exe is a Distutils extension to build Python scripts into Windows executable 
 
 This package is only required for the Windows build. The Linux and Mac OS X builds use the PyInstaller scripts included in this folder.
 
-You can download py2exe from their [official website][4].
+You can download py2exe from their [official website][4], and if using Python 3 it will require Python 3.4 as it is not yet compatible with newer Python 3 versions.
 
 ##### PyInstaller
 Converts (packages) Python programs into stand-alone executables, used for the Linux and Mac OS X builds.
