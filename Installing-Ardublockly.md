@@ -26,7 +26,7 @@ are automatically generated every time code is pushed to the repository and migh
 
 http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/index.html
 
-| Linux (64 bit only)           | Windows 7 or higher (32/64 bits) | macOS 10.8 or higher        |
+| Linux (64 bit only)           | Windows 7 or higher (32/64 bits) | macOS 10.10 or higher        |
 |:-----------------------------:|:--------------------------------:|:---------------------------:|
 | [![Linux Build Status][3]][4] | [![Windows Build status][5]][6]  | [![Mac Build Status][7]][8] |
 | [Download Link][9]            | [Download Link][10]              | [Download Link][11]         |
