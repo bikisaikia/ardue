@@ -1,0 +1,4 @@
+- Version 1.8.1: Command line with relative paths https://github.com/arduino/Arduino/pull/5878
+- Version 1.8.1: Command line with "--save-prefs" https://github.com/arduino/Arduino/issues/6067
+- Version 1.6.12: Command line builder error when setting the port https://github.com/arduino/Arduino/issues/5456 https://github.com/arduino/Arduino/issues/5413
+- Version 1.6.12 to 1.6.14: https://github.com/arduino/Arduino/pull/5427
