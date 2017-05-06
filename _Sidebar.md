@@ -12,6 +12,8 @@
         - [Text](Create-~-Text)
         - [Variables](Create-~-Variables)
         - [Functions](Create-~-Functions)
+- [FAQs](FAQs)
+- [Known Arduino IDE issues](Known-Arduino-IDE-issues)
 - Developer Guide:
     - [Building Ardublockly](Building-Ardublockly)
     - [Running Uncompressed Ardublockly](Running-Uncompressed-Ardublockly)
@@ -21,7 +23,6 @@
         - [Extending Ardublockly](Create-Blocks-~-Extending-Ardublockly)
     - [Add a New Board](Add-New-Arduino-Board)
     - [Add a New Language](Add-New-Language)
-- [FAQs](FAQs)
 - About:
     - [About Ardublockly](About)
     - [License](License)
