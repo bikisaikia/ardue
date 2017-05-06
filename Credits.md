@@ -1,4 +1,10 @@
 # Credits
-_This is a place holder page, the Credits will be coming soon_
+Ardublockly is a project from [@carlosperate](https://github.com/carlosperate).
 
-_If you have an urgency to use this part of the documentation, please [create a new an issue](https://github.com/carlosperate/ardublockly/issues) and I will prioritise it_.
+Thank you to all the contributors for your valuable contributions:
+
+* @bmcage
+* 
+* 
+* 
+
