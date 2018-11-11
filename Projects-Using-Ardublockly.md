@@ -1,4 +1,4 @@
-# Projects using Ardublockly.
+# Projects using Ardublockly
 
 If you'd like to add or delete your project feel free to [edit this wiki page](https://github.com/carlosperate/ardublockly/wiki/Projects-Using-Ardublockly).
 
