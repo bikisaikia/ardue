@@ -1,6 +1,6 @@
-Projects that use Ardublockly.
+# Projects using Ardublockly.
 
-If you'd like to add or delete your project feel free to edit this wiki page.
+If you'd like to add or delete your project feel free to [edit this wiki page](https://github.com/carlosperate/ardublockly/wiki/Projects-Using-Ardublockly).
 
 - [block.ino](http://blockino.ufsc.br)
 - [ibtikarmaker](http://maker.ibtikar.io/resources/)
