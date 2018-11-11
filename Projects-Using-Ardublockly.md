@@ -3,6 +3,8 @@
 If you'd like to add or delete your project feel free to [edit this wiki page](https://github.com/carlosperate/ardublockly/wiki/Projects-Using-Ardublockly).
 
 - [block.ino](http://blockino.ufsc.br)
+- [Botly Studio](http://www.botly-studio.fr)
+- [CocoBlockly](https://cocorobo.hk/cocoblockly/)
 - [ibtikarmaker](http://maker.ibtikar.io/resources/)
 - [oxocard](http://www.oxocard.ch/Blockly/ardublockly/)
 - [senseBox](https://sensebox.de/en/blockly)
