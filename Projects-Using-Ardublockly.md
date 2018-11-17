@@ -7,6 +7,7 @@ If you'd like to add or delete your project feel free to [edit this wiki page](h
 - [Botly Studio](http://www.botly-studio.fr)
 - [CocoBlockly](https://cocorobo.hk/cocoblockly/)
 - [ibtikarmaker](http://maker.ibtikar.io/resources/)
+- [Kniwwelino](http://www.kniwwelino.lu/en/)
 - [oxocard](http://www.oxocard.ch/Blockly/ardublockly/)
 - [senseBox](https://sensebox.de/en/blockly)
 - [Spartan](https://modernroboticsinc.com/spartan)
