@@ -24,6 +24,7 @@ One good starting point is to go through the official Blockly documentation: [Bl
 
 You can use [Blockly Factory](https://blockly-demo.appspot.com/static/demos/blockfactory/index.html) to generate
 a lot of this code for you.
+Hint: The function definition in the generator file in Ardublockly is not like in the auto-generated file. It needs to be "Blockly.**Arduino**['...'] = function(block) {" instead of "Blockly.JavaScript['...'] = function(block) {"
 
 
 ## Arduino Code Generator
